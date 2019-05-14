@@ -125,7 +125,7 @@ module ActsAsTaggableOn::Taggable
     end
 
     def custom_contexts
-      @custom_contexts ||= taggings.map(&:context).uniq
+      @custom_contexts ||= []
     end
 
     def is_taggable?
